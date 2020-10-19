@@ -1,3 +1,8 @@
+@font-face{
+    font-family: 'Poppins';
+    src: local('Poppins'), url(./fonts/Poppins/Poppins-Medium.ttf) format('truetype');
+}
+
 .inputBox{
     height: 34px;
     width: 34px;
@@ -17,18 +22,23 @@
     margin: auto;
     height: 335px;
     width: 334px;
-    margin-top: 10px;
+    margin-top: 150px;
 }
+
 .newGameButton{  
-    background-color: white; 
+    font-family: 'Poppins';
+    font-size: 20px;
+    color: #11426d;
+    background-color: #f04d25; 
     width: 150px;
     height: 40px;  
-   
+    border-radius: 15px;
    
 }
 .mainHeader{ 
+    font-family: 'Poppins';
     font-size: 35px; 
-    margin: auto;
+    margin-top: 150px;
 }
 
 .whiteBox{
@@ -42,6 +52,94 @@
     display: block;
     width: 100%;
 }
-body{
-    #background-color: red;
+.body{
+    background-color: red;
 }
+
+.sidebar{
+    height: 100%;
+    width: 225px;
+    position: fixed;
+    background-color: #11426d;
+    top: 0;
+    padding-top: 10px;
+    left: 0;
+    z-index: 1;
+    overflow-x: hidden;
+}
+
+.sidebar a{
+
+    text-align: left;
+    text-decoration: none;
+    vertical-align: middle;
+    margin-left: 0px;
+    position: relative;
+    top:50px;
+    padding: 20px 0px 0px 15px;
+    font-family: 'Poppins';
+    font-size: 25px;
+    color: #f04d25;
+    display: block;
+}
+
+.sidebar :hover{
+    background-color: #55c3ea;
+}
+
+.dot1{
+    height: 23px;
+    width: 23px;
+    background-color: #f04d25;
+    border-radius: 50%;
+    display: inline-flex;
+}
+
+.dot2{
+    height: 23px;
+    width: 23px;
+    background-color: #f04d25;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot3{
+    height: 23px;
+    width: 23px;
+    background-color: #f04d25;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot4{
+    height: 23px;
+    width: 23px;
+    background-color: #f04d25;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.topbar{
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    background-color: #55c3ea;
+    top: 0;
+    padding-top: 10px;
+    left: 0;
+    z-index: 1;
+    overflow-x: hidden;
+}
+
+.topbar a{
+    text-align: left;
+    text-decoration: none;
+    margin-left: 20px;
+    position: fixed;
+    padding: 0px 0px 0px 200px;
+    font-family: 'Poppins';
+    font-size: 25px;
+    color: #11426d;
+    display: block;
+}
+

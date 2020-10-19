@@ -123,14 +123,31 @@ class App extends React.Component{
     render(){
         return (
             <div className="content">
-                <h className="mainHeader">Sudoku</h>
-                <br/>
+            
+                {/* <h className="mainHeader">Sudoku</h>
+                <br/> */}
                 <GameBoardDisplay boardData={this.state.gameBoardData} inputHandler={this.inputHandler}/>
                 <br/>
                 <button className="newGameButton" onClick={this.initGameBoard}> New Game </button>
 
+                <div class="sidebar">
+                <a href="#"> <span class="dot1"></span> Easy </a>
+                <a href="#"> <span class="dot2"></span> Medium </a>
+                <a href="#"> <span class="dot3"></span> Difficult</a>
+                <a href="#"> <span class="dot4"></span> High Scores</a>
+                </div>
+
+                <div class="topbar">
+
+                <a href="#"> SUDOKU </a>
+                {/* <img src="/logo.JPG" alt = ""/> */} 
+
+                </div>
+
             </div>
+            
         );
+
 
     }
 }
